@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contactez la Société CITY GROUP SARL — Commandes, partenariats, informations sur nos cajous premium."/>
+  <title>Contact — CITY GROUP SARL</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <style>
+    .faq-section {
+      background: var(--off-white);
+      padding: clamp(4rem,7vw,7rem) 0;
+    }
+    .faq-grid { max-width: 800px; margin: 3rem auto 0; }
+    .faq-item {
+      border-bottom: 1px solid rgba(26,13,5,.09);
+      overflow: hidden;
+    }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem 0; gap: 1.5rem;
+      cursor: none;
+      font-weight: 600; font-size: 1rem; color: var(--espresso);
+      transition: color .3s ease;
+    }
+    .faq-q:hover { color: var(--caramel); }
+    .faq-icon {
+      width: 32px; height: 32px; flex-shrink: 0;
+      background: rgba(201,152,26,.12); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 1.2rem;
+      transition: transform .35s ease, background .3s ease;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--gold); color: var(--espresso); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height .4s var(--ease-out), padding .4s ease;
+    }
+    .faq-item.open .faq-a { max-height: 200px; }
+    .faq-a p { padding-bottom: 1.4rem; color: rgba(26,13,5,.55); font-size: .95rem; }
+
+    /* Map placeholder */
+    .map-placeholder {
+      background: var(--espresso); height: 380px;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .map-placeholder::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(107,55,16,.4) 0%, transparent 70%);
+    }
+    .map-inner { text-align: center; position: relative; z-index: 1; }
+    .map-pin { font-size: 3rem; margin-bottom: 1rem; animation: pinBounce 2s ease-in-out infinite; }
+    @keyframes pinBounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .map-inner h3 { color: var(--warm-white); margin-bottom: .5rem; }
+    .map-inner p  { color: rgba(255,255,255,.5); font-size: .9rem; }
+    .map-btn {
+      display: inline-flex; align-items: center; gap: .6rem;
+      margin-top: 1.5rem; padding: .7rem 1.8rem;
+      background: var(--gold); color: var(--espresso);
+      border-radius: 100px; font-size: .75rem; font-weight: 700;
+      letter-spacing: .15em; text-transform: uppercase;
+      transition: background .3s ease;
+    }
+    .map-btn:hover { background: var(--gold-bright); }
+  </style>
+</head>
+<body>
+
+  <div class="page-veil"></div>
+  <div class="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="./assets/logo.WebP" alt="City Group SARL" style="height:72px; width:auto; object-fit:contain;"/>
+        <div class="logo-name">
+          CITY GROUP
+          <sub>SARL</sub>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html"    class="nav-link">Accueil</a></li>
+        <li><a href="products.html" class="nav-link">Produits</a></li>
+        <li><a href="about.html"    class="nav-link">À Propos</a></li>
+        <li><a href="contact.html"  class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <ul class="nav-menu">
+      <li><a href="index.html"    class="nav-link">Accueil</a></li>
+      <li><a href="products.html" class="nav-link">Produits</a></li>
+      <li><a href="about.html"    class="nav-link">À Propos</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="ph-bg">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1400&q=80" alt="" loading="lazy"/>
+    </div>
+    <div class="container">
+      <div class="ph-content">
+        <span class="eyebrow-line eyebrow" data-reveal="up">Parlons-nous</span>
+        <h1 data-reveal="up" data-delay="1"><em>Contactez</em>-nous</h1>
+        <div class="breadcrumbs" data-reveal="up" data-delay="2">
+          <a href="index.html">Accueil</a>
+          <span class="bsep">›</span>
+          <span>Contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="sec-contact">
+    <div class="container">
+      <div class="contact-layout-2">
+
+        <!-- Sidebar -->
+        <div class="ctc-sidebar" data-reveal="left">
+          <span class="eyebrow-line eyebrow">Coordonnées</span>
+          <h2 style="margin:.7rem 0 .6rem;">Nous sommes<br/><em>à votre écoute</em></h2>
+          <p>
+            Une question sur nos produits, une commande spéciale ou un partenariat professionnel?
+            Notre équipe vous répond dans les plus brefs délais.
+          </p>
+
+          <div class="ctc-details">
+            <div class="ctc-det">
+              <div class="ctc-det-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 011.9 0h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              </div>
+              <div class="ctc-det-info">
+                <div class="lbl">Téléphone</div>
+                <div class="val">+216 XX XXX XXX</div>
+              </div>
+            </div>
+
+            <div class="ctc-det">
+              <div class="ctc-det-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="ctc-det-info">
+                <div class="lbl">WhatsApp</div>
+                <div class="val">+216 XX XXX XXX</div>
+              </div>
+            </div>
+
+            <div class="ctc-det">
+              <div class="ctc-det-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="ctc-det-info">
+                <div class="lbl">Email</div>
+                <div class="val">contact@citygroup.tn</div>
+              </div>
+            </div>
+
+            <div class="ctc-det">
+              <div class="ctc-det-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="ctc-det-info">
+                <div class="lbl">Adresse</div>
+                <div class="val">Tunis, Tunisie</div>
+              </div>
+            </div>
+
+            <div class="ctc-det">
+              <div class="ctc-det-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="ctc-det-info">
+                <div class="lbl">Horaires</div>
+                <div class="val">Lun–Ven: 8h–18h</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div style="margin-top:2.5rem;">
+            <div class="eyebrow" style="margin-bottom:1rem;">Suivez-nous</div>
+            <div class="social-row">
+              <a href="#" class="s-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+              <a href="#" class="s-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" class="s-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+              <a href="#" class="s-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="form-card" data-reveal="right">
+          <span class="eyebrow" style="display:block; margin-bottom:1.2rem;">Envoyez-nous un message</span>
+          <form id="contactForm" novalidate>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Mohamed Ben Ali" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse email</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required/>
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="+216 XX XXX XXX"/>
+              </div>
+              <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <select id="sujet" name="sujet">
+                  <option value="">Choisir un sujet</option>
+                  <option value="commande">Passer une commande</option>
+                  <option value="pro">Partenariat professionnel</option>
+                  <option value="info">Informations produits</option>
+                  <option value="devis">Demande de devis</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <span>Envoyer le message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+          <div class="form-msg" id="formSuccess">
+            ✓ Votre message a bien été envoyé! Nous vous répondrons dans les plus brefs délais.
+          </div>
+        </div>
+
+      </div><!-- /contact-layout-2 -->
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <div class="map-placeholder">
+    <div class="map-inner">
+      <div class="map-pin">📍</div>
+      <h3>Société CITY GROUP SARL</h3>
+      <p>Tunis, Tunisie</p>
+      <a href="https://maps.google.com" target="_blank" class="map-btn">
+        Ouvrir dans Google Maps
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+      <!-- TO ADD REAL MAP: Replace this div with:
+      <iframe src="https://maps.google.com/maps?q=Tunis,Tunisia&output=embed" ...></iframe>
+      -->
+    </div>
+  </div>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="sec-header center" data-reveal="up">
+        <span class="eyebrow">Questions Fréquentes</span>
+        <h2 class="sec-title">Vous avez des <em>questions?</em></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item" data-reveal="up">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Quels sont vos délais de livraison?</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            <p>Nous livrons partout en Tunisie sous 24 à 48 heures ouvrées. Pour Tunis et Grand Tunis, la livraison peut être effectuée le jour même pour les commandes passées avant 12h.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-reveal="up" data-delay="1">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Proposez-vous des tarifs pour les professionnels?</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            <p>Oui, nous avons des grilles tarifaires spéciales pour les revendeurs, restaurants, pâtisseries et autres professionnels. Contactez-nous pour obtenir notre catalogue B2B.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-reveal="up" data-delay="2">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Quelle est la durée de conservation de vos produits?</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            <p>Nos cajous conditionnés en emballage hermétique se conservent entre 6 et 12 mois dans un endroit frais et sec. Une fois ouvert, consommez dans les 4 à 6 semaines.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-reveal="up" data-delay="3">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Vos produits contiennent-ils des additifs?</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            <p>Non. Nos cajous sont 100% naturels, sans additifs, sans conservateurs et sans colorants artificiels. Pour le cajou salé, nous utilisons uniquement du sel de mer naturel.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-reveal="up">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span>Pouvez-vous créer des packs personnalisés?</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-a">
+            <p>Absolument! Pour les événements, cadeaux corporatifs ou commandes spéciales, nous proposons des packs personnalisés avec votre logo ou message. Contactez-nous pour plus de détails.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name" style="font-size:1.5rem; margin-bottom:1rem; display:block;">CITY GROUP <span style="color:rgba(255,255,255,.35); font-size:.7em;">SARL</span></div>
+          <p>Spécialiste du cajou premium en Tunisie depuis 2010.</p>
+          <div class="social-row">
+            <a href="#" class="s-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="s-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="s-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="#" class="s-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h5>Navigation</h5><div class="footer-links"><a href="index.html">Accueil</a><a href="products.html">Produits</a><a href="about.html">À Propos</a><a href="contact.html">Contact</a></div></div>
+        <div class="footer-col"><h5>Produits</h5><div class="footer-links"><a href="products.html">Cajou Naturel</a><a href="products.html">Cajou Grillé</a><a href="products.html">Cajou Salé</a><a href="products.html">Pack Famille</a></div></div>
+        <div class="footer-col"><h5>Contact</h5><div class="footer-links"><a href="mailto:contact@citygroup.tn">contact@citygroup.tn</a><a href="tel:+21600000000">+216 XX XXX XXX</a><a href="#">Tunis, Tunisie</a></div></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Société CITY GROUP SARL. Tous droits réservés.</p>
+        <p>Conçu avec passion — Tunisie 🇹🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const allItems = document.querySelectorAll('.faq-item');
+      allItems.forEach(function(i){ if(i !== item) i.classList.remove('open'); });
+      item.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

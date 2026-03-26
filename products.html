@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Découvrez la gamme complète de cajou premium de CITY GROUP SARL — Naturel, Grillé, Salé et plus encore."/>
+  <title>Produits — CITY GROUP SARL</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <style>
+    /* Extra product page styles */
+    .feature-bar {
+      background: var(--off-white);
+      border-top: 1px solid rgba(26,13,5,.07);
+      border-bottom: 1px solid rgba(26,13,5,.07);
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .feature-item {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 2rem 2rem;
+      border-right: 1px solid rgba(26,13,5,.07);
+      transition: background .3s ease;
+    }
+    .feature-item:last-child { border-right: none; }
+    .feature-item:hover { background: white; }
+    .feat-icon {
+      width: 50px; height: 50px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--gold), var(--caramel));
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+    }
+    .feat-title { font-weight: 700; font-size: .95rem; color: var(--espresso); margin-bottom: .15rem; }
+    .feat-desc  { font-size: .8rem; color: rgba(26,13,5,.5); line-height: 1.4; }
+    @media(max-width:900px){ .feature-grid{grid-template-columns:repeat(2,1fr);} .feature-item{border-bottom:1px solid rgba(26,13,5,.07);} }
+    @media(max-width:480px){ .feature-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE VEIL -->
+  <div class="page-veil"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="./assets/logo.WebP" alt="City Group SARL" style="height:72px; width:auto; object-fit:contain;"/>
+        <div class="logo-name">
+          CITY GROUP
+          <sub>SARL</sub>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html"    class="nav-link">Accueil</a></li>
+        <li><a href="products.html" class="nav-link">Produits</a></li>
+        <li><a href="about.html"    class="nav-link">À Propos</a></li>
+        <li><a href="contact.html"  class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile">
+    <ul class="nav-menu">
+      <li><a href="index.html"    class="nav-link">Accueil</a></li>
+      <li><a href="products.html" class="nav-link">Produits</a></li>
+      <li><a href="about.html"    class="nav-link">À Propos</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="ph-bg">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80" alt="" loading="lazy"/>
+    </div>
+    <div class="container">
+      <div class="ph-content">
+        <span class="eyebrow-line eyebrow" data-reveal="up">Notre Gamme</span>
+        <h1 data-reveal="up" data-delay="1">Nos <em>Produits</em></h1>
+        <div class="breadcrumbs" data-reveal="up" data-delay="2">
+          <a href="index.html">Accueil</a>
+          <span class="bsep">›</span>
+          <span>Produits</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <div class="feature-bar">
+    <div class="container" style="padding:0 clamp(1.5rem,5vw,5rem)">
+      <div class="feature-grid">
+        <div class="feature-item" data-reveal="up">
+          <div class="feat-icon">🌿</div>
+          <div>
+            <div class="feat-title">100% Naturel</div>
+            <div class="feat-desc">Sans additifs ni conservateurs</div>
+          </div>
+        </div>
+        <div class="feature-item" data-reveal="up" data-delay="1">
+          <div class="feat-icon">🌰</div>
+          <div>
+            <div class="feat-title">Sélection Rigoureuse</div>
+            <div class="feat-desc">Grains triés à la main</div>
+          </div>
+        </div>
+        <div class="feature-item" data-reveal="up" data-delay="2">
+          <div class="feat-icon">📦</div>
+          <div>
+            <div class="feat-title">Emballage Hermétique</div>
+            <div class="feat-desc">Fraîcheur garantie longue durée</div>
+          </div>
+        </div>
+        <div class="feature-item" data-reveal="up" data-delay="3">
+          <div class="feat-icon">🚚</div>
+          <div>
+            <div class="feat-title">Livraison Rapide</div>
+            <div class="feat-desc">Partout en Tunisie</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="sec-products">
+    <div class="container">
+      <div class="sec-header" data-reveal="up">
+        <span class="eyebrow">Catalogue Complet</span>
+        <h2 class="sec-title">Toute notre <em>gamme cajou</em></h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-row" data-reveal="up">
+        <button class="f-btn active" data-filter="all">Tout voir</button>
+        <button class="f-btn" data-filter="naturel">Naturel</button>
+        <button class="f-btn" data-filter="grille">Grillé</button>
+        <button class="f-btn" data-filter="sale">Salé</button>
+        <button class="f-btn" data-filter="pack">Packs</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-full">
+
+        <div class="product-card product-item" data-cat="naturel" data-reveal="up">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=700&q=80" alt="Cajou Naturel 250g" loading="lazy"/>
+            <span class="pc-badge">Bestseller</span>
+          </div>
+          <div class="pc-body">
+            <h3>Cajou Naturel 250g</h3>
+            <p>Le cajou dans son état le plus pur. Récolté à maturité optimale et séché naturellement au soleil.</p>
+            <div class="pc-footer">
+              <span class="price">12,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="naturel" data-reveal="up" data-delay="1">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Cajou Naturel 500g" loading="lazy"/>
+          </div>
+          <div class="pc-body">
+            <h3>Cajou Naturel 500g</h3>
+            <p>Le format idéal pour la famille. Même qualité premium, meilleure valeur.</p>
+            <div class="pc-footer">
+              <span class="price">22,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="grille" data-reveal="up" data-delay="2">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=700&q=80" alt="Cajou Grillé" loading="lazy"/>
+            <span class="pc-badge">Populaire</span>
+          </div>
+          <div class="pc-body">
+            <h3>Cajou Grillé 250g</h3>
+            <p>Torréfié lentement à basse température. Un arôme unique, une texture croquante irrésistible.</p>
+            <div class="pc-footer">
+              <span class="price">14,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="grille" data-reveal="up">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=700&q=80" alt="Cajou Grillé 500g" loading="lazy"/>
+          </div>
+          <div class="pc-body">
+            <h3>Cajou Grillé 500g</h3>
+            <p>Le grand format pour les amateurs de cajou grillé. Parfait pour l'apéritif ou les recettes.</p>
+            <div class="pc-footer">
+              <span class="price">26,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="sale" data-reveal="up" data-delay="1">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?auto=format&fit=crop&w=700&q=80" alt="Cajou Salé Premium" loading="lazy"/>
+            <span class="pc-badge">Nouveau</span>
+          </div>
+          <div class="pc-body">
+            <h3>Cajou Salé Premium</h3>
+            <p>Assaisonné au sel de mer de qualité. L'alliance parfaite entre nature et saveur.</p>
+            <div class="pc-footer">
+              <span class="price">15,500 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="pack" data-reveal="up" data-delay="2">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1574226516831-e1dff420e562?auto=format&fit=crop&w=700&q=80" alt="Pack Famille" loading="lazy"/>
+            <span class="pc-badge">Promo</span>
+          </div>
+          <div class="pc-body">
+            <h3>Pack Famille 1kg</h3>
+            <p>Assortiment de cajou naturel et grillé pour toute la famille. Le meilleur rapport qualité-prix.</p>
+            <div class="pc-footer">
+              <span class="price">42,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="pack" data-reveal="up">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=700&q=80" alt="Pack Cadeau" loading="lazy"/>
+          </div>
+          <div class="pc-body">
+            <h3>Pack Cadeau Prestige</h3>
+            <p>Boîte cadeau élégante avec une sélection de nos meilleurs cajous. L'idée cadeau parfaite.</p>
+            <div class="pc-footer">
+              <span class="price">55,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="sale" data-reveal="up" data-delay="1">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1490885578174-acda8905c2c6?auto=format&fit=crop&w=700&q=80" alt="Cajou Épicé" loading="lazy"/>
+          </div>
+          <div class="pc-body">
+            <h3>Cajou Épicé</h3>
+            <p>Pour les amateurs de sensations. Un mélange d'épices sélectionnées sur notre cajou premium.</p>
+            <div class="pc-footer">
+              <span class="price">16,000 TND</span>
+              <a href="contact.html" class="pc-link">Commander <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card product-item" data-cat="pack" data-reveal="up" data-delay="2">
+          <div class="pc-img">
+            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=700&q=80" alt="Pack Pro 5kg" loading="lazy"/>
+          </div>
+          <div class="pc-body">
+            <h3>Pack Pro 5kg</h3>
+            <p>Conçu pour les professionnels — restaurants, pâtissiers, revendeurs. Tarif spécial sur demande.</p>
+            <div class="pc-footer">
+              <span class="price">Sur demande</span>
+              <a href="contact.html" class="pc-link">Nous contacter <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /products-full -->
+
+      <!-- CTA Block -->
+      <div style="margin-top:5rem; padding:3.5rem; background:var(--espresso); border-radius:24px; text-align:center;" data-reveal="up">
+        <span class="eyebrow">Commande en gros?</span>
+        <h2 style="color:var(--warm-white); margin:.7rem 0 1rem;">Tarifs <em style="color:var(--gold-bright)">professionnels</em> disponibles</h2>
+        <p style="color:rgba(255,255,255,.5); max-width:480px; margin:0 auto 2rem;">
+          Vous êtes revendeur, restaurateur ou pâtissier? Contactez-nous pour obtenir
+          nos grilles de tarifs professionnels et conditions de partenariat.
+        </p>
+        <a href="contact.html" class="btn btn-primary">
+          <span>Demander un devis</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name" style="font-size:1.5rem; margin-bottom:1rem; display:block;">CITY GROUP <span style="color:rgba(255,255,255,.35); font-size:.7em;">SARL</span></div>
+          <p>Spécialiste du cajou premium en Tunisie depuis 2010.</p>
+          <div class="social-row">
+            <a href="#" class="s-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" class="s-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="s-link" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="#" class="s-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col"><h5>Navigation</h5><div class="footer-links"><a href="index.html">Accueil</a><a href="products.html">Produits</a><a href="about.html">À Propos</a><a href="contact.html">Contact</a></div></div>
+        <div class="footer-col"><h5>Produits</h5><div class="footer-links"><a href="products.html">Cajou Naturel</a><a href="products.html">Cajou Grillé</a><a href="products.html">Cajou Salé</a><a href="products.html">Pack Famille</a></div></div>
+        <div class="footer-col"><h5>Contact</h5><div class="footer-links"><a href="mailto:contact@citygroup.tn">contact@citygroup.tn</a><a href="tel:+21600000000">+216 XX XXX XXX</a><a href="#">Tunis, Tunisie</a></div></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Société CITY GROUP SARL. Tous droits réservés.</p>
+        <p>Conçu avec passion — Tunisie 🇹🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
