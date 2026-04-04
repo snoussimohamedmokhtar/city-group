@@ -28,23 +28,24 @@
 
   // ===== LOADING SCREEN =====
   function setupLoader() {
-    const loader = document.getElementById('loader');
+    var loader = document.getElementById('loader');
     if (!loader) { setupScrollAnimations(); return; }
 
     document.body.style.overflow = 'hidden';
 
-    const onLoad = function () {
+    // Use DOMContentLoaded — does NOT wait for images/fonts to finish
+    var dismiss = function () {
       setTimeout(function () {
         loader.classList.add('out');
         document.body.style.overflow = '';
-        setTimeout(function () { loader.remove(); }, 800);
+        setTimeout(function () { if (loader.parentNode) loader.parentNode.removeChild(loader); }, 800);
       }, 2400);
     };
 
-    if (document.readyState === 'complete') {
-      onLoad();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', dismiss);
     } else {
-      window.addEventListener('load', onLoad);
+      dismiss();
     }
   }
 

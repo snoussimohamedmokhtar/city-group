@@ -7,6 +7,24 @@
   <title>CITY GROUP SARL — Cajou Premium</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <style>
+    .sec-plus { background: var(--espresso); padding: 5rem 0; overflow: hidden; }
+    .sec-plus-title { text-align:center; margin-bottom:3rem; }
+    .sec-plus-title .eyebrow { color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.35em; text-transform:uppercase; display:block; margin-bottom:.6rem; }
+    .sec-plus-title h2 { color:var(--warm-white); }
+    .sec-plus-title h2 em { color:var(--gold-bright); font-style:italic; }
+    .plus-track-wrap { overflow:hidden; position:relative; }
+    .plus-track-wrap::before,
+    .plus-track-wrap::after { content:''; position:absolute; top:0; bottom:0; width:150px; z-index:2; pointer-events:none; }
+    .plus-track-wrap::before { left:0; background:linear-gradient(to right, var(--espresso), transparent); }
+    .plus-track-wrap::after  { right:0; background:linear-gradient(to left, var(--espresso), transparent); }
+    .plus-track { display:flex; gap:1.2rem; width:max-content; animation: plusSlide 30s linear infinite; }
+    .plus-track:hover { animation-play-state:paused; }
+    @keyframes plusSlide { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    .plus-card { flex-shrink:0; width:300px; height:210px; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,.07); }
+    .plus-card img { width:100%; height:100%; object-fit:cover; transition:transform .5s ease; filter:brightness(.85); }
+    .plus-card:hover img { transform:scale(1.06); filter:brightness(1); }
+  </style>
 </head>
 <body>
 
@@ -213,6 +231,32 @@
           <span>Voir tous nos produits</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PLUS DE CITY GROUP ===================== -->
+  <section class="sec-plus">
+    <div class="sec-plus-title">
+      <span class="eyebrow">Notre Univers</span>
+      <h2>Plus de <em>CITY GROUP SARL</em></h2>
+    </div>
+    <div class="plus-track-wrap">
+      <div class="plus-track">
+        <!-- Set 1 -->
+        <div class="plus-card"><img src="./assets/ladder/img1.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img2.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img3.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img4.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img5.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img6.WebP" alt="" loading="lazy"/></div>
+        <!-- Set 2 (duplicate pour boucle infinie) -->
+        <div class="plus-card"><img src="./assets/ladder/img1.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img2.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img3.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img4.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img5.WebP" alt="" loading="lazy"/></div>
+        <div class="plus-card"><img src="./assets/ladder/img6.WebP" alt="" loading="lazy"/></div>
       </div>
     </div>
   </section>
