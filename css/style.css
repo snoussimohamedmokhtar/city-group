@@ -759,7 +759,7 @@ section { position:relative; overflow:hidden; }
   .ast-imgs { height:320px; }
 }
 @media (max-width: 768px) {
-  .nav-menu { display:none; }
+  .navbar .nav-menu { display:none; }
   .hamburger { display:flex; }
   .hero-photo { width:100%; opacity:.25; }
   .products-grid-3, .products-full { grid-template-columns:1fr; }
