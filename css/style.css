@@ -239,13 +239,23 @@ section { position:relative; overflow:hidden; }
   transition:transform .65s var(--ease-out);
 }
 .nav-mobile.open { transform:translateY(0); }
-.nav-mobile .nav-link {
-  font-family:'Cormorant Garamond',serif;
-  font-size: clamp(2rem,6vw,3rem);
-  font-weight:600; letter-spacing:.04em;
-  color:rgba(255,255,255,.75);
-  margin:.5rem 0;
+.nav-mobile .nav-menu {
+  display:flex !important;
+  flex-direction:column;
+  align-items:center;
+  gap:0;
 }
+.nav-mobile .nav-link {
+  font-family:'DM Sans',serif;
+  font-size:1.1rem;
+  font-weight:600;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.75);
+  padding:.85rem 2rem;
+  transition:color .3s ease;
+}
+.nav-mobile .nav-link:hover { color:var(--gold-bright); }
 
 /* ===== BUTTONS ===== */
 .btn {
