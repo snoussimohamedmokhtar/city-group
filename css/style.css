@@ -793,11 +793,53 @@ section { position:relative; overflow:hidden; }
   .values-grid { grid-template-columns:1fr 1fr; }
   .footer-grid { grid-template-columns:1fr; gap:2rem; }
   .form-row-2 { grid-template-columns:1fr; }
-  .stats-row { grid-template-columns:1fr; gap:1rem; }
   body { cursor:auto; }
   .cursor { display:none; }
+  h1 { font-size:clamp(2.2rem,9vw,4rem) !important; }
+  h2 { font-size:clamp(1.6rem,6vw,2.5rem) !important; }
 
-  /* About page mobile */
+  /* ── ABOUT TEASER mobile ── */
+  .sec-about-teaser { padding:3rem 0 !important; }
+  .about-layout {
+    grid-template-columns:1fr !important;
+    gap:2rem !important;
+    width:100%;
+  }
+  .about-visual { width:100%; }
+  .about-main-img {
+    aspect-ratio:16/9 !important;
+    border-radius:14px !important;
+    width:100%;
+  }
+  .about-accent-img, .about-spin-badge { display:none !important; }
+  .about-text {
+    width:100%;
+    padding:0 !important;
+    word-break:break-word;
+    overflow-wrap:break-word;
+  }
+  .about-text .sec-title { font-size:clamp(1.8rem,7vw,2.8rem) !important; }
+  .about-text p { font-size:.9rem !important; margin:1rem 0 !important; }
+  .stats-row {
+    grid-template-columns:repeat(3,1fr) !important;
+    gap:.6rem !important;
+    padding:1rem .8rem !important;
+  }
+  .stat-n { font-size:1.6rem !important; }
+  .stat-l { font-size:.55rem !important; letter-spacing:.05em !important; }
+  .about-videos {
+    flex-direction:column !important;
+    gap:.8rem !important;
+    margin-top:1.2rem !important;
+    width:100%;
+  }
+  .about-videos video {
+    width:100% !important;
+    height:240px !important;
+    border-radius:12px !important;
+  }
+
+  /* ── About page mobile ── */
   .about-story-layout { grid-template-columns:1fr !important; gap:2rem; }
   .ast-imgs { height:240px !important; }
   .ast-imgs .tall, .ast-imgs .short { border-radius:12px; }
@@ -809,29 +851,19 @@ section { position:relative; overflow:hidden; }
   .sec-about { padding:3rem 0 !important; }
   .ph-content h1 { font-size:clamp(2rem,8vw,3rem) !important; }
 
-  /* General mobile fixes */
+  /* ── General ── */
   .contact-card-big { padding:1.8rem !important; }
   .footer-brand img { height:55px !important; }
   .sec-products-preview { padding:3rem 0 !important; }
-  h1 { font-size:clamp(2.2rem,9vw,4rem) !important; }
-  h2 { font-size:clamp(1.6rem,6vw,2.5rem) !important; }
-
-  .about-videos {
-    flex-direction: column !important;
-    grid-column: 1/-1;
-  }
-  .about-videos video {
-    height: 300px !important;
-    width: 100% !important;
-  }
 }
+
 @media (max-width: 480px) {
   .values-grid { grid-template-columns:1fr; }
   .hero-actions { flex-direction:column; align-items:flex-start; }
   .contact-card-big { border-radius:20px; }
   .nav-mobile .nav-link { font-size:.9rem !important; padding:.8rem 1rem !important; }
-  .container { padding:0 1.2rem !important; }
-  .about-layout { gap:2rem !important; }
-  .stats-row { gap:.8rem !important; }
+  .container { padding:0 1rem !important; }
+  .stats-row { grid-template-columns:1fr !important; gap:.8rem !important; }
   .stat-n { font-size:2rem !important; }
+  .about-videos video { height:200px !important; }
 }
